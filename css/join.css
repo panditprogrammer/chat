@@ -1,11 +1,13 @@
 .chat_container .chat_header h1{
     font-size: 23px;
+    color: var(--primary_color);
+
 }
 
 
 .chat_container .chat{
     height: 80vh;
-    width: 400px;
+    max-width: 400px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -42,6 +44,13 @@
     
 }
 
+.chat_container .join_body .join_content h2{
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--primary_color);
+    -webkit-box-reflect: below 1px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(30%, transparent), to(#1d3a473b));
+}
+
 .chat_container .join_body .join_content input{
     width: 80%;
     display: block;
@@ -64,10 +73,36 @@
     /* background-color: lightslategray; */
     color: var(--white);
     background: linear-gradient(-10deg,var(--primary_color),var(--secondary_color));
+    cursor: pointer;
+    transition: ease-in 0.6s;
 
 }
 
+.chat_container .join_body .join_content input[type=submit]:hover{
+    background: linear-gradient(-10deg,var(--secondary_color), var(--primary_color));
 
+}
+
+@media screen and (max-width: 700px){
+
+    
+    header nav .logo{
+        width: 10%;
+        
+    }
+
+    
+    header nav .menu{
+        height: 90%;
+        width: 90%;
+        
+    }
+
+    .chat_container .chat{
+        width: 100%;
+    }
+
+}
 
 
 

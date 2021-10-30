@@ -65,6 +65,7 @@ header nav .menu a{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-transform: capitalize;
     padding: 6px 12px ;
+    
 
 }
 
@@ -95,7 +96,7 @@ header nav .menu a:hover{
 
 }
 
-.container-fluid .chat_header{
+.container-fluid .chat .chat_header{
     width: 100%;
     height: 15%;
     display: flex;
@@ -105,13 +106,15 @@ header nav .menu a:hover{
 
 }
 
-.container-fluid .chat_header i{
+.container-fluid .chat .chat_header i{
     padding-right: 10px;
+    color: var(--primary_color);
+
 
 }
 
 /* chat body section  */
-.container-fluid .chat_body{
+.container-fluid .chat .chat_body{
     width: 100%;
     height: 70%;
     display: flex;
@@ -119,12 +122,13 @@ header nav .menu a:hover{
     align-items: center;
 }
 
-.container-fluid .chat_body .message_container{
+.container-fluid .chat .chat_body .message_container{
     height: 80%;
     width: 100%;
+    overflow-y: auto;
 }
 
-.container-fluid .chat_body .message_container .left{
+.container-fluid .chat .chat_body .message_container .left{
     padding: 5px 10px;
     margin: 10px;
     font-size: 14px;
@@ -135,7 +139,7 @@ header nav .menu a:hover{
 
 }
 
-.container-fluid .chat_body .message_container .right{
+.container-fluid .chat .chat_body .message_container .right{
     padding: 5px 10px;
     margin: 10px;
     font-size: 14px;
@@ -147,7 +151,7 @@ header nav .menu a:hover{
 }
 
 
-.container-fluid .chat_footer{
+.container-fluid .chat .chat_footer{
     width: 100%;
     height: 15%;
     background-color: var(--white);
@@ -155,12 +159,12 @@ header nav .menu a:hover{
 
 }
 
-.container-fluid .chat_footer form{
+.container-fluid .chat .chat_footer form{
     width: 100%;
     height: 100%;
 }
 
-.container-fluid .chat_footer .chat_footer_content{
+.container-fluid .chat .chat_footer .chat_footer_content{
     width: 100%;
     height: 100%;
     display: flex;
@@ -168,9 +172,9 @@ header nav .menu a:hover{
     align-items: center;
 }
 
-.container-fluid .chat_footer input[type=text]{
+.container-fluid .chat .chat_footer input[type=text]{
     display: inline-block;
-    width: 70%;
+    width: 65%;
     padding: 0.375rem 0.75rem;
     font-size: 1rem;
     line-height: 1.5;
@@ -184,23 +188,35 @@ header nav .menu a:hover{
     font-family: 'Zen Antique', serif;
 }
 
-.container-fluid .chat_footer input[type=submit]{
+.container-fluid .chat .chat_footer input[type=text]:focus{
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+    
+}
+
+.container-fluid .chat .chat_footer input[type=submit]{
     display: inline-block;
-    width: 10%;
+    width: 20%;
     margin-left: 1rem;
     padding: 0.375rem 0.75rem;
     font-size: 1rem;
     line-height: 1.5;
     color: #495057;
     background-color: #fff;
+    color: var(--primary_color);
     background-clip: padding-box;
     border: 1px solid #ced4da;
     border-radius: 0.25rem;
     outline: none;
     cursor: pointer;
+
 }
 
-.container-fluid .chat_footer i{
+
+.container-fluid .chat .chat_footer input[type=submit]:hover{
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+
+}
+.container-fluid .chat .chat_footer i{
     padding: 0.375rem 1.2rem;
     font-size: 1rem;
 }
@@ -233,7 +249,7 @@ footer p a{
     }
 
     .container-fluid .chat{
-        width: 100%;
+        width: 100% !important;
     }
 
 }
