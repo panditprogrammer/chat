@@ -4,14 +4,15 @@
   "description": "Realtime chat appliction in NodeJs",
   "main": "index.js",
   "scripts": {
+    "start":"index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "PanditProgrammer",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.17.1",
     "nodemon": "^2.0.14",
     "socket.io": "^4.3.1"
   },
-  "devDependencies": {},
   "keywords": []
 }

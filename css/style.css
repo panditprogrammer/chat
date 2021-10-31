@@ -129,6 +129,7 @@ header nav .menu a:hover{
 }
 
 .container-fluid .chat .chat_body .message_container .left{
+    max-width: 80%;
     padding: 5px 10px;
     margin: 10px;
     font-size: 14px;
@@ -140,6 +141,7 @@ header nav .menu a:hover{
 }
 
 .container-fluid .chat .chat_body .message_container .right{
+    max-width: 80%;
     padding: 5px 10px;
     margin: 10px;
     font-size: 14px;

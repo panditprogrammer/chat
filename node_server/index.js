@@ -1,7 +1,7 @@
 // This file will create node js server 
 
 
-const io = require('socket.io')(8000,{ // this is important 
+const io = require('socket.io')(8080,{ // this is important 
     cors:{origin:"*"}
 });
 
