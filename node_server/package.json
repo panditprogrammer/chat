@@ -1,17 +1,16 @@
 {
   "name": "node_server",
   "version": "1.0.0",
-  "description": "Realtime chat appliction in NodeJs",
+  "description": "Realtime chat appliction in NodeJs by PanditProgrammer.com",
   "main": "index.js",
   "scripts": {
-    "start":"index.js"
+    "start": "node index.js"
   },
   "author": "PanditProgrammer",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1",
-    "nodemon": "^2.0.14",
     "socket.io": "^4.3.1"
   },
+  "devDependencies": {},
   "keywords": []
 }
