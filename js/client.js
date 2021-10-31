@@ -1,4 +1,4 @@
-const socket = io('/');
+const socket = io('http://localhost:8080');
 
 
 // html form 
