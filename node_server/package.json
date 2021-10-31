@@ -11,6 +11,8 @@
   "dependencies": {
     "socket.io": "^4.3.1"
   },
-  "devDependencies": {},
-  "keywords": []
+  "keywords": [],
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  }
 }
