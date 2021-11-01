@@ -1,6 +1,5 @@
 const socket = io('http://localhost:8080');
 
-
 // html form 
 const form = document.getElementById("form_container");
 // input box 
@@ -10,7 +9,7 @@ const message_show_box = document.querySelector(".message_container");
 
 const add_html = (message, css_position)=>{
     const message_show_span = document.createElement('span');
-    message_show_span.innerText = message;
+    message_show_span.innerHTML = message;
     message_show_span.classList.add(css_position);
     message_show_box.append(message_show_span);
 }
@@ -38,17 +37,17 @@ console.log("user ",username)
 socket.emit('new-user-joined', username);
 
 socket.on('user-joined',username=>{
-    add_html(`${username} Joined the chat`, 'left');
+    add_html(`<strong class="text-capitalize">${username}</strong> Joined the chat`, 'left');
 })
 
 // show message in chat_body 
 socket.on('receive', user_and_msg=>{
-    add_html(`${user_and_msg.username} - ${user_and_msg.message}`,'left');
+    add_html(`<strong class="text-capitalize">${user_and_msg.username}</strong> - ${user_and_msg.message}`,'left');
 })
 
 // show message in chat_body 
 if(username !== null )
 socket.on('left', username=>{
-    add_html(`${username}  left...` ,'left');
+    add_html(`<strong class="text-capitalize">${username}</strong>  left...` ,'left');
 })
 
