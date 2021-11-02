@@ -37,17 +37,17 @@ console.log("user ",username)
 socket.emit('new-user-joined', username);
 
 socket.on('user-joined',username=>{
-    add_html(`<strong class="text-capitalize">${username}</strong> Joined the chat`, 'left');
+    add_html(`<strong>${username}</strong> Joined the chat`, 'left');
 })
 
 // show message in chat_body 
 socket.on('receive', user_and_msg=>{
-    add_html(`<strong class="text-capitalize">${user_and_msg.username}</strong> - ${user_and_msg.message}`,'left');
+    add_html(`<strong>${user_and_msg.username}</strong> - ${user_and_msg.message}`,'left');
 })
 
 // show message in chat_body 
 if(username !== null )
 socket.on('left', username=>{
-    add_html(`<strong class="text-capitalize">${username}</strong>  left...` ,'left');
+    add_html(`<strong>${username}</strong>  left...` ,'left');
 })
 
