@@ -1,0 +1,56 @@
+@import "./config.css";
+/* Join Page */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.join-container {
+    width: 500px;
+	min-width: 360px;
+	color: var(--text-color);
+	background: var(--light-color-dark);
+    border-radius: 0.2rem;
+    padding: 1rem;
+}
+
+.join-header {
+	text-align: center;
+	padding: 1rem;
+    color: var(--dark-color-a);
+    border-bottom: 2px solid var(--dark-color-a);
+}
+
+.join-main {
+    width: 80%;
+    margin: 2rem auto;
+}
+
+.join-main .form-control {
+	margin-bottom: 1rem;
+}
+
+.join-main label {
+	display: block;
+	margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.join-main input[type='text'] {
+	font-size: 1rem;
+	padding: 0.8rem 1rem;
+	width: 100%;
+    background-color: var(--light-color);
+    border-radius: 0.2rem;
+    border-style: none;
+    outline: none;
+}
+
+.join-main .btn {
+    margin-top: 1rem;
+    padding: 1rem;
+	width: 100%;
+    background-color: var(--dark-color-a);
+    color: var(--light-color-dark);
+    border-radius: 0.2rem;
+}

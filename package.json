@@ -1,0 +1,17 @@
+{
+  "name": "LiveShare",
+  "version": "1.0.0",
+  "description": "Node Express MongoDB Socket.io Chatting Application by Pandit programmer",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "Pandit Programmer",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3",
+    "moment": "^2.29.2",
+    "socket.io": "^4.4.1"
+  }
+}
