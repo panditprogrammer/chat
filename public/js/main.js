@@ -77,7 +77,6 @@ if (username === null || room === null) {
     }
 
     function outputUsers(users) {
-        console.log(users);
         all_users.innerHTML = `
     ${users.map(user => `<li> ${user.username} </li>`).join('')}
     `;
