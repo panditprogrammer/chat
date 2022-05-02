@@ -89,3 +89,8 @@ document.getElementById("leave_chat").addEventListener("click", () => {
     localStorage.clear();
     location.assign(location.origin);
 })
+
+// menu handler 
+$("#menuBtn").click(function(){
+    $(".chat-sidebar").toggle(500);
+  });

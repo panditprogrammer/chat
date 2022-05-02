@@ -7,7 +7,6 @@ body{
 }
 .join-container {
     width: 500px;
-	min-width: 360px;
 	color: var(--text-color);
 	background: var(--light-color-dark);
     border-radius: 0.2rem;
@@ -53,4 +52,26 @@ body{
     background-color: var(--dark-color-a);
     color: var(--light-color-dark);
     border-radius: 0.2rem;
+}
+
+
+
+@media screen and (max-width: 540px){
+    .join-container {
+        width: 100%;
+    }
+
+    .join-main {
+        width: 100%;
+    }
+
+    .join-main input[type='text'] {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+ 
+    .join-main .btn {
+        padding: 0.5rem 1rem;
+    }
+    
 }
